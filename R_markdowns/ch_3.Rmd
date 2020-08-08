@@ -1,0 +1,19 @@
+---
+title: 'Chapter 3: Sampling the Imaginary'
+author: "Quang Nguyen"
+date: "8/8/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(rethinking)
+```
+
+Easy problems rely on the following code: 
+```{r}
+
+```
