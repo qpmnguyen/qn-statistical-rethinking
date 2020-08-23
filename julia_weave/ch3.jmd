@@ -1,0 +1,75 @@
+# Chapter 3   
+Solutions for Chapter 3 of "Statistical Rethinking" by Richard McElreath.  
+
+```julia
+using Random
+using Distributions
+using Plots
+using StatsBase
+```
+
+**Easy** problems use samples from the posterior distribution for the globe tossing example:   
+```julia
+pgrid = range(0,1, length = 1000)
+prior = fill(1, 1000)
+distributions = map(x -> Binomial(9,x), pgrid)
+likelihood = map(x -> pdf(x, 6), distributions)
+posterior = likelihood .* prior 
+posterior = posterior ./ sum(posterior)
+samples = StatsBase.sample(collect(pgrid), pweights(posterior), 10000,replace = true)
+pgrid = collect(pgrid)
+p1 = plot(posterior, title = "Posterior distribtion", label = "posterior")
+p2 = histogram(samples, title = "Sampling histogram", label = "samples")
+plot(p1,p2, layout = 2)
+```
+
+**3E1** How much posterior probability lies below p = 0.2   
+```julia
+sum(posterior[findall(x -> x < 0.2, pgrid)])
+``` 
+**3E2** How much posterior probabilitiy lies above p = 0.8  
+```julia
+sum(posterior[findall(x -> x > 0.8, pgrid)])
+```
+**3E3** How much posterior probability between 0.2 and 0.8  
+```julia
+sum(posterior[findall(x -> 0.2 < x < 0.8, pgrid)])
+```
+**3E4** 20% of the posterior probability lies above which value of p?  
+```julia
+percentile(samples, 0.2)
+```
+**3E5** 20% of the posterior probability lies above which value of p   
+```julia
+percentile(samples, 0.8)
+```
+**3E6** Which values of p contain the narrowest interval equal to 66% of posterior probability  
+This should be the HPDI (highest posterior density interval)   
+```julia
+
+function HPDinterval(samples, prob = 0.95)
+    cred_int = (1 - prob)/2
+    lower = convert(Int64, round(length(samples) * cred_int))
+    upper = convert(Int64, round(length(samples) * (1 - cred_int)))
+    diff = upper - lower
+    HPDo = sort(samples)[1:lower]
+    HPDu = sort(samples)[(diff + 1):upper]
+    width = HPDu .- HPDo
+    index = sortperm(width)
+    return(round(HPDo[index[1]];digits=3), round(HPDu[index[1]];digits=3))
+end
+
+HPDinterval(samples, 0.66)
+```
+**3E7** Which values of p contains 66% of posterior probability assuming equal posterior probability
+both above and below the interval  
+```julia
+function PercentileInterval(samples, prob = 0.95)
+    cred_int = (1 - prob)/2
+    return(percentile(samples, [cred_int, (1-cred_int)]))
+end
+
+PercentileInterval(samples, 0.66)
+
+```
+
