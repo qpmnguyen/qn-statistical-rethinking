@@ -7,14 +7,16 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
+```{r, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-```{r package_load, message=FALSE}
+```{r, message=FALSE}
 library(rethinking)
 library(glue)
 ```
+
+# Chapter 3: Sampling the Imaginary  
 
 Easy problems rely on the following code: 
 ```{r easy_setup}

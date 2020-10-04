@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3: Sampling the Imaginary</title>
+  <meta name="description" content="Chapter 3: Sampling the Imaginary" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3: Sampling the Imaginary" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3: Sampling the Imaginary" />
+  
+  
+  
+
+<meta name="author" content="Quang Nguyen" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="0.0.1" data-path=""><a href="#e1."><i class="fa fa-check"></i><b>0.0.1</b> 3E1.</a></li>
+<li class="chapter" data-level="0.0.2" data-path=""><a href="#e2"><i class="fa fa-check"></i><b>0.0.2</b> 3E2</a></li>
+<li class="chapter" data-level="0.0.3" data-path=""><a href="#e3"><i class="fa fa-check"></i><b>0.0.3</b> 3E3</a></li>
+<li class="chapter" data-level="0.0.4" data-path=""><a href="#e4"><i class="fa fa-check"></i><b>0.0.4</b> 3E4</a></li>
+<li class="chapter" data-level="0.0.5" data-path=""><a href="#e5"><i class="fa fa-check"></i><b>0.0.5</b> 3E5</a></li>
+<li class="chapter" data-level="0.0.6" data-path=""><a href="#e6"><i class="fa fa-check"></i><b>0.0.6</b> 3E6</a></li>
+<li class="chapter" data-level="0.0.7" data-path=""><a href="#e7"><i class="fa fa-check"></i><b>0.0.7</b> 3E7</a></li>
+<li class="chapter" data-level="0.0.8" data-path=""><a href="#m1"><i class="fa fa-check"></i><b>0.0.8</b> 3M1</a></li>
+<li class="chapter" data-level="0.0.9" data-path=""><a href="#m2"><i class="fa fa-check"></i><b>0.0.9</b> 3M2</a></li>
+<li class="chapter" data-level="0.0.10" data-path=""><a href="#curve-from-lines"><i class="fa fa-check"></i><b>0.0.10</b> 4.5 Curve from lines</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Chapter 3: Sampling the Imaginary</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Chapter 3: Sampling the Imaginary</h1>
+<p class="author"><em>Quang Nguyen</em></p>
+<p class="date"><em>8/8/2020</em></p>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">library</span>(rethinking)</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">library</span>(glue)</span></code></pre></div>
+<p>Easy problems rely on the following code:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a>p_grid &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">0</span>, <span class="dt">to =</span> <span class="dv">1</span>, <span class="dt">length.out =</span> <span class="dv">1000</span>)</span>
+<span id="cb2-2"><a href="#cb2-2"></a>prior &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">1</span>,<span class="dv">1000</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a>likelihood &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dv">6</span>, <span class="dt">size =</span> <span class="dv">9</span>, <span class="dt">prob =</span> p_grid)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>posterior &lt;-<span class="st"> </span>likelihood <span class="op">*</span><span class="st"> </span>prior</span>
+<span id="cb2-5"><a href="#cb2-5"></a>posterior &lt;-<span class="st"> </span>posterior <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(posterior)</span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="kw">set.seed</span>(<span class="dv">100</span>)</span>
+<span id="cb2-7"><a href="#cb2-7"></a>samples &lt;-<span class="st"> </span><span class="kw">sample</span>(p_grid, <span class="dt">prob =</span> posterior, <span class="dt">size =</span><span class="fl">1e4</span>, <span class="dt">replace =</span> T)</span></code></pre></div>
+<div id="e1." class="section level3">
+<h3><span class="header-section-number">0.0.1</span> 3E1.</h3>
+<p>Posterior probability that lies below <span class="math inline">\(p = 0.2\)</span></p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">sum</span>(posterior[p_grid <span class="op">&lt;</span><span class="fl">0.2</span>])</span></code></pre></div>
+<pre><code>## [1] 0.0008560951</code></pre>
+</div>
+<div id="e2" class="section level3">
+<h3><span class="header-section-number">0.0.2</span> 3E2</h3>
+<p>Posterior probability that lies above <span class="math inline">\(p = 0.8\)</span></p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1"></a><span class="kw">sum</span>(posterior[p_grid <span class="op">&gt;</span><span class="st"> </span><span class="fl">0.8</span>])</span></code></pre></div>
+<pre><code>## [1] 0.1203449</code></pre>
+</div>
+<div id="e3" class="section level3">
+<h3><span class="header-section-number">0.0.3</span> 3E3</h3>
+<p>Posterior probability lies between <span class="math inline">\(p = 0.2\)</span> and <span class="math inline">\(p = 0.8\)</span></p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1"></a><span class="kw">sum</span>(samples <span class="op">&lt;</span><span class="st"> </span><span class="fl">0.8</span> <span class="op">&amp;</span><span class="st"> </span>samples <span class="op">&gt;</span><span class="st"> </span><span class="fl">0.2</span>)<span class="op">/</span><span class="fl">1e4</span></span></code></pre></div>
+<pre><code>## [1] 0.888</code></pre>
+</div>
+<div id="e4" class="section level3">
+<h3><span class="header-section-number">0.0.4</span> 3E4</h3>
+<p>20% of the posterior probability lies below <span class="math inline">\(p\)</span> value of</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1"></a><span class="kw">quantile</span>(samples, <span class="fl">0.2</span>)</span></code></pre></div>
+<pre><code>##       20% 
+## 0.5185185</code></pre>
+</div>
+<div id="e5" class="section level3">
+<h3><span class="header-section-number">0.0.5</span> 3E5</h3>
+<p>20% of the posterior probability lies above the <span class="math inline">\(p\)</span> value of</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1"></a><span class="kw">quantile</span>(samples, <span class="fl">0.8</span>)</span></code></pre></div>
+<pre><code>##       80% 
+## 0.7557558</code></pre>
+</div>
+<div id="e6" class="section level3">
+<h3><span class="header-section-number">0.0.6</span> 3E6</h3>
+<p>Values of <span class="math inline">\(p\)</span> containing the narrowest interval equal to 66% of the posterior probability</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1"></a>rethinking<span class="op">::</span><span class="kw">HPDI</span>(<span class="dt">samples =</span> samples, <span class="dt">prob =</span> <span class="fl">0.66</span>)</span></code></pre></div>
+<pre><code>##     |0.66     0.66| 
+## 0.5085085 0.7737738</code></pre>
+</div>
+<div id="e7" class="section level3">
+<h3><span class="header-section-number">0.0.7</span> 3E7</h3>
+<p>Values of <span class="math inline">\(p\)</span> containing the interval with 66% of the posterior probability assuming equal posterior probability both below and above the interval</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1"></a>rethinking<span class="op">::</span><span class="kw">PI</span>(<span class="dt">samples =</span> samples, <span class="dt">prob =</span> <span class="fl">0.66</span>)</span></code></pre></div>
+<pre><code>##       17%       83% 
+## 0.5025025 0.7697698</code></pre>
+</div>
+<div id="m1" class="section level3">
+<h3><span class="header-section-number">0.0.8</span> 3M1</h3>
+<p>Posterior distribution of globe tossing problem using grid approximation using new data of 8 water in 15 tosses</p>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1"></a>p_grid &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">0</span>,<span class="dv">1</span>,<span class="dt">length.out =</span> <span class="dv">1000</span>)</span>
+<span id="cb17-2"><a href="#cb17-2"></a>prior &lt;-<span class="st"> </span><span class="kw">rep</span>(<span class="dv">1</span>,<span class="dv">1000</span>)</span>
+<span id="cb17-3"><a href="#cb17-3"></a>likelihood &lt;-<span class="st"> </span><span class="kw">dbinom</span>(<span class="dt">x =</span> <span class="dv">8</span>, <span class="dt">size =</span> <span class="dv">15</span>, <span class="dt">prob =</span> p_grid)</span>
+<span id="cb17-4"><a href="#cb17-4"></a>posterior &lt;-<span class="st"> </span>prior <span class="op">*</span><span class="st"> </span>likelihood </span>
+<span id="cb17-5"><a href="#cb17-5"></a>posterior &lt;-<span class="st"> </span>posterior <span class="op">/</span><span class="st"> </span><span class="kw">sum</span>(posterior)</span>
+<span id="cb17-6"><a href="#cb17-6"></a><span class="kw">plot</span>(<span class="kw">density</span>(posterior))</span></code></pre></div>
+<p><img src="_main_files/figure-html/3m1-1.png" width="672" /></p>
+</div>
+<div id="m2" class="section level3">
+<h3><span class="header-section-number">0.0.9</span> 3M2</h3>
+<p>Using 10,000 samples to calculate the 90% HPDI for <span class="math inline">\(p\)</span></p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1"></a><span class="kw">set.seed</span>(<span class="dv">100</span>)</span>
+<span id="cb18-2"><a href="#cb18-2"></a>samples &lt;-<span class="st"> </span><span class="kw">sample</span>(p_grid, <span class="dt">size =</span> <span class="fl">1e4</span>, <span class="dt">replace =</span> T, <span class="dt">prob =</span> posterior)</span>
+<span id="cb18-3"><a href="#cb18-3"></a>rethinking<span class="op">::</span><span class="kw">HPDI</span>(samples, <span class="dt">prob =</span> <span class="fl">0.9</span>)</span></code></pre></div>
+<pre><code>##      |0.9      0.9| 
+## 0.3343343 0.7217217</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1"></a><span class="kw">hist</span>(samples)</span></code></pre></div>
+<p><img src="_main_files/figure-html/3m2-1.png" width="672" />
+### 3M3</p>
+
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1"></a><span class="kw">library</span>(rethinking)</span>
+<span id="cb21-2"><a href="#cb21-2"></a><span class="kw">library</span>(glue)</span>
+<span id="cb21-3"><a href="#cb21-3"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<div id="text-book-code-for-gaussian-modelling-of-height." class="section level4">
+<h4><span class="header-section-number">0.0.9.1</span> Text-book code for Gaussian modelling of height.</h4>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1"></a><span class="kw">data</span>(<span class="st">&quot;Howell1&quot;</span>)</span>
+<span id="cb22-2"><a href="#cb22-2"></a>d &lt;-<span class="st"> </span>Howell1</span>
+<span id="cb22-3"><a href="#cb22-3"></a>d2 &lt;-<span class="st"> </span>d <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">filter</span>(age <span class="op">&gt;=</span><span class="st"> </span><span class="dv">18</span>)</span>
+<span id="cb22-4"><a href="#cb22-4"></a>mu.list &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dt">from=</span><span class="dv">150</span>, <span class="dt">to=</span><span class="dv">160</span>, <span class="dt">length.out =</span> <span class="dv">100</span>)</span>
+<span id="cb22-5"><a href="#cb22-5"></a>sigma.list &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dt">from =</span> <span class="dv">7</span>, <span class="dt">to =</span> <span class="dv">9</span>, <span class="dt">length.out =</span> <span class="dv">100</span>)</span>
+<span id="cb22-6"><a href="#cb22-6"></a>post &lt;-<span class="st"> </span><span class="kw">expand.grid</span>(<span class="dt">mu =</span> mu.list, <span class="dt">sigma =</span> sigma.list)</span>
+<span id="cb22-7"><a href="#cb22-7"></a></span>
+<span id="cb22-8"><a href="#cb22-8"></a><span class="co"># calculate likelihood from grid of values </span></span>
+<span id="cb22-9"><a href="#cb22-9"></a>post<span class="op">$</span>LL &lt;-<span class="st"> </span><span class="kw">sapply</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(post), <span class="cf">function</span>(x){</span>
+<span id="cb22-10"><a href="#cb22-10"></a>  <span class="kw">sum</span>(<span class="kw">dnorm</span>(d2<span class="op">$</span>height, post<span class="op">$</span>mu[x], post<span class="op">$</span>sigma[x], <span class="dt">log =</span> <span class="ot">TRUE</span>))</span>
+<span id="cb22-11"><a href="#cb22-11"></a>})</span>
+<span id="cb22-12"><a href="#cb22-12"></a></span>
+<span id="cb22-13"><a href="#cb22-13"></a><span class="co"># evaluate numerator as likelihood combined with prior </span></span>
+<span id="cb22-14"><a href="#cb22-14"></a>post<span class="op">$</span>prod &lt;-<span class="st"> </span>post<span class="op">$</span>LL <span class="op">+</span><span class="st"> </span><span class="kw">dnorm</span>(post<span class="op">$</span>mu, <span class="dv">170</span>, <span class="dv">20</span>, <span class="ot">TRUE</span>) <span class="op">+</span><span class="st"> </span><span class="kw">dunif</span>(post<span class="op">$</span>sigma, <span class="dv">0</span>, <span class="dv">50</span>, <span class="ot">TRUE</span>)</span>
+<span id="cb22-15"><a href="#cb22-15"></a></span>
+<span id="cb22-16"><a href="#cb22-16"></a><span class="co"># normalize by maximum </span></span>
+<span id="cb22-17"><a href="#cb22-17"></a>post<span class="op">$</span>prob &lt;-<span class="st"> </span><span class="kw">exp</span>(post<span class="op">$</span>prod <span class="op">-</span><span class="st"> </span><span class="kw">max</span>(post<span class="op">$</span>prod))</span>
+<span id="cb22-18"><a href="#cb22-18"></a></span>
+<span id="cb22-19"><a href="#cb22-19"></a><span class="kw">print</span>(<span class="st">&quot;Contour plots&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;Contour plots&quot;</code></pre>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1"></a><span class="kw">contour_xyz</span>(post<span class="op">$</span>mu, post<span class="op">$</span>sigma, post<span class="op">$</span>prob)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<div class="sourceCode" id="cb25"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1"></a><span class="kw">print</span>(<span class="st">&quot;Heatmap&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;Heatmap&quot;</code></pre>
+<div class="sourceCode" id="cb27"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1"></a><span class="kw">image_xyz</span>(post<span class="op">$</span>mu, post<span class="op">$</span>sigma, post<span class="op">$</span>prob)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-5-2.png" width="672" />
+#### Sampling from the posterior</p>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1"></a><span class="co"># sampling rows based on posterior </span></span>
+<span id="cb28-2"><a href="#cb28-2"></a>sample.rows &lt;-<span class="st"> </span><span class="kw">sample</span>(<span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(post), <span class="dt">size =</span> <span class="fl">1e4</span>, <span class="dt">replace =</span> T, <span class="dt">prob =</span> post<span class="op">$</span>prob)</span>
+<span id="cb28-3"><a href="#cb28-3"></a></span>
+<span id="cb28-4"><a href="#cb28-4"></a><span class="co"># retrieve parameter values </span></span>
+<span id="cb28-5"><a href="#cb28-5"></a>sample.mu &lt;-<span class="st"> </span>post<span class="op">$</span>mu[sample.rows]</span>
+<span id="cb28-6"><a href="#cb28-6"></a>sample.sigma &lt;-<span class="st"> </span>post<span class="op">$</span>sigma[sample.rows]</span>
+<span id="cb28-7"><a href="#cb28-7"></a></span>
+<span id="cb28-8"><a href="#cb28-8"></a><span class="kw">plot</span>(sample.mu, sample.sigma, <span class="dt">cex =</span> <span class="fl">0.5</span>, <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">col =</span> <span class="kw">col.alpha</span>(rangi2,<span class="fl">0.1</span>))</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1"></a><span class="co"># Marginal distribution</span></span>
+<span id="cb29-2"><a href="#cb29-2"></a><span class="kw">dens</span>(sample.mu)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-6-2.png" width="672" /></p>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1"></a><span class="kw">dens</span>(sample.sigma)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-6-3.png" width="672" /></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1"></a><span class="kw">PI</span>(sample.mu)</span></code></pre></div>
+<pre><code>##       5%      94% 
+## 153.9394 155.2525</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1"></a><span class="kw">PI</span>(sample.sigma)</span></code></pre></div>
+<pre><code>##       5%      94% 
+## 7.323232 8.252525</code></pre>
+</div>
+<div id="using-the-quadratic-approximation" class="section level4">
+<h4><span class="header-section-number">0.0.9.2</span> Using the quadratic approximation</h4>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1"></a>flist &lt;-<span class="st"> </span><span class="kw">alist</span>(</span>
+<span id="cb35-2"><a href="#cb35-2"></a>  height <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(mu, sigma),</span>
+<span id="cb35-3"><a href="#cb35-3"></a>  mu <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(<span class="dv">178</span>,<span class="dv">20</span>),</span>
+<span id="cb35-4"><a href="#cb35-4"></a>  sigma <span class="op">~</span><span class="st"> </span><span class="kw">dunif</span>(<span class="dv">0</span>,<span class="dv">50</span>)</span>
+<span id="cb35-5"><a href="#cb35-5"></a>)</span>
+<span id="cb35-6"><a href="#cb35-6"></a></span>
+<span id="cb35-7"><a href="#cb35-7"></a>m4<span class="fl">.1</span> &lt;-<span class="st"> </span><span class="kw">quap</span>(flist, <span class="dt">data =</span> d2)</span>
+<span id="cb35-8"><a href="#cb35-8"></a><span class="kw">precis</span>(m4<span class="fl">.1</span>)</span></code></pre></div>
+<pre><code>##            mean        sd       5.5%      94.5%
+## mu    154.60699 0.4119786 153.948567 155.265410
+## sigma   7.73103 0.2913575   7.265385   8.196676</code></pre>
+<p><code>quap</code> estimates posterior distribution by approximation. It needs a start point to start the gradient procedure, which will be chosen at random from the prior if start values are not specified. Use <code>alist</code> when defining a list of formulas because alist does not evaluate terms in the list.</p>
+</div>
+<div id="using-quadratic-approximation-with-a-more-informative-prior" class="section level4">
+<h4><span class="header-section-number">0.0.9.3</span> Using quadratic approximation with a more informative prior</h4>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1"></a>m4<span class="fl">.2</span> &lt;-<span class="st"> </span><span class="kw">quap</span>(</span>
+<span id="cb37-2"><a href="#cb37-2"></a>  <span class="kw">alist</span>(</span>
+<span id="cb37-3"><a href="#cb37-3"></a>    height <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(mu, sigma),</span>
+<span id="cb37-4"><a href="#cb37-4"></a>    mu <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(<span class="dv">178</span>, <span class="fl">0.1</span>),</span>
+<span id="cb37-5"><a href="#cb37-5"></a>    sigma <span class="op">~</span><span class="st"> </span><span class="kw">dunif</span>(<span class="dv">0</span>,<span class="dv">50</span>)</span>
+<span id="cb37-6"><a href="#cb37-6"></a>  ), <span class="dt">data =</span> d2</span>
+<span id="cb37-7"><a href="#cb37-7"></a>)</span>
+<span id="cb37-8"><a href="#cb37-8"></a></span>
+<span id="cb37-9"><a href="#cb37-9"></a><span class="kw">precis</span>(m4<span class="fl">.2</span>)</span></code></pre></div>
+<pre><code>##            mean        sd      5.5%     94.5%
+## mu    177.86375 0.1002354 177.70356 178.02395
+## sigma  24.51756 0.9289228  23.03296  26.00215</code></pre>
+</div>
+<div id="sampling-from-quap" class="section level4">
+<h4><span class="header-section-number">0.0.9.4</span> Sampling from quap</h4>
+<div class="sourceCode" id="cb39"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1"></a>post &lt;-<span class="st"> </span><span class="kw">extract.samples</span>(m4<span class="fl">.1</span>, <span class="dt">n =</span> <span class="fl">1e4</span>)</span>
+<span id="cb39-2"><a href="#cb39-2"></a><span class="kw">precis</span>(post)</span></code></pre></div>
+<pre><code>##             mean        sd       5.5%      94.5%
+## mu    154.610693 0.4151809 153.946644 155.277104
+## sigma   7.732226 0.2922737   7.259823   8.193751
+##                                                                                              histogram
+## mu                                            &lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2585&gt;&lt;U+2587&gt;&lt;U+2582&gt;&lt;U+2581&gt;&lt;U+2581&gt;
+## sigma &lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2582&gt;&lt;U+2585&gt;&lt;U+2587&gt;&lt;U+2587&gt;&lt;U+2583&gt;&lt;U+2581&gt;&lt;U+2581&gt;&lt;U+2581&gt;</code></pre>
+</div>
+<div id="linear-prediction" class="section level4">
+<h4><span class="header-section-number">0.0.9.5</span> Linear prediction</h4>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1"></a><span class="kw">plot</span>(d2<span class="op">$</span>height <span class="op">~</span><span class="st"> </span>d2<span class="op">$</span>weight)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+Simulating to get the prior.</p>
+<div class="sourceCode" id="cb42"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1"></a>N &lt;-<span class="st"> </span><span class="dv">100</span></span>
+<span id="cb42-2"><a href="#cb42-2"></a>a &lt;-<span class="st"> </span><span class="kw">rnorm</span>(N, <span class="dv">178</span>, <span class="dv">20</span>)</span>
+<span id="cb42-3"><a href="#cb42-3"></a>b &lt;-<span class="st"> </span><span class="kw">rnorm</span>(N, <span class="dv">0</span>, <span class="dv">10</span>)</span>
+<span id="cb42-4"><a href="#cb42-4"></a>b2 &lt;-<span class="st"> </span><span class="kw">rlnorm</span>(N, <span class="dv">0</span>, <span class="dv">1</span>)</span>
+<span id="cb42-5"><a href="#cb42-5"></a>xbar &lt;-<span class="st"> </span><span class="kw">mean</span>(d2<span class="op">$</span>weight)</span>
+<span id="cb42-6"><a href="#cb42-6"></a><span class="kw">print</span>(<span class="st">&quot;Getting the normal prior&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;Getting the normal prior&quot;</code></pre>
+<div class="sourceCode" id="cb44"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1"></a><span class="kw">plot</span>(<span class="ot">NULL</span>, <span class="dt">xlim =</span> <span class="kw">range</span>(d2<span class="op">$</span>weight), <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="op">-</span><span class="dv">100</span>,<span class="dv">400</span>))</span>
+<span id="cb44-2"><a href="#cb44-2"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>N){</span>
+<span id="cb44-3"><a href="#cb44-3"></a>  <span class="kw">curve</span>(a[i] <span class="op">+</span><span class="st"> </span>b[i]<span class="op">*</span>(x <span class="op">-</span><span class="st"> </span>xbar), <span class="dt">from =</span> <span class="kw">min</span>(d2<span class="op">$</span>weight), </span>
+<span id="cb44-4"><a href="#cb44-4"></a>        <span class="dt">to=</span><span class="kw">max</span>(d2<span class="op">$</span>weight),<span class="dt">add =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb44-5"><a href="#cb44-5"></a>}</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1"></a><span class="kw">print</span>(<span class="st">&quot;Getting the log-normal prior&quot;</span>)</span></code></pre></div>
+<pre><code>## [1] &quot;Getting the log-normal prior&quot;</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1"></a><span class="kw">plot</span>(<span class="ot">NULL</span>, <span class="dt">xlim =</span> <span class="kw">range</span>(d2<span class="op">$</span>weight), <span class="dt">ylim =</span> <span class="kw">c</span>(<span class="op">-</span><span class="dv">100</span>,<span class="dv">400</span>))</span>
+<span id="cb47-2"><a href="#cb47-2"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span>N){</span>
+<span id="cb47-3"><a href="#cb47-3"></a>  <span class="kw">curve</span>(a[i] <span class="op">+</span><span class="st"> </span>b2[i]<span class="op">*</span>(x <span class="op">-</span><span class="st"> </span>xbar), <span class="dt">from =</span> <span class="kw">min</span>(d2<span class="op">$</span>weight), </span>
+<span id="cb47-4"><a href="#cb47-4"></a>        <span class="dt">to=</span><span class="kw">max</span>(d2<span class="op">$</span>weight),<span class="dt">add =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb47-5"><a href="#cb47-5"></a>}</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+<p>We fuss about priors for two reasons:<br />
+1. There are many analyses in which no amount of data makes the prior irrelevant. Non Bayesian methods also depend on such structural assumptions and are no better off.<br />
+2. Second, thinking about priors helps us develop better models, maybe even eventually going beyond geocentricism.</p>
+<p><strong>Rethinking: What is the correct prior?</strong> People often assume that there is a uniquely correct prior, which is wrong. Priors can be wrong in the same way that a hammer can be wrong for building a table. There exists guidelines to chose priors. Priors encode data and information before seeing data. Priors allow us to see consequences of beginning with different information. We can use priors to discourage certain parameter values such as negative associations between height and weight. When we don’t know that much, we still now some information about the plausible range of values.</p>
+<p><strong>Rethinking: Prior predictive simulation and p-hacking</strong> If we choose to evaluate our choice of priors on observed data, that’s cheating. The procedure performed is to try to choose priors based on pre-data knowledge. We’re judging our choice of prior on general facts, not the sample.</p>
+<p>Back to our regression model of weight and height which we have as:
+<span class="math display">\[h_i \sim Normal(\mu_i, \sigma)\]</span>
+<span class="math display">\[\mu_i = \alpha + \beta(x_i - \bar{x})\]</span>
+<span class="math display">\[\alpha \sim Normal(178,20)\]</span>
+<span class="math display">\[\beta \sim Log-Normal(0,1)\]</span>
+<span class="math display">\[\sigma \sim Uniform(0,50)\]</span>
+We can encode this to our model</p>
+<div class="sourceCode" id="cb48"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1"></a>m4<span class="fl">.3</span> &lt;-<span class="st"> </span><span class="kw">quap</span>(</span>
+<span id="cb48-2"><a href="#cb48-2"></a>  <span class="kw">alist</span>(</span>
+<span id="cb48-3"><a href="#cb48-3"></a>    height <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(mu, sigma),</span>
+<span id="cb48-4"><a href="#cb48-4"></a>    mu &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span>b<span class="op">*</span>(weight <span class="op">-</span><span class="st"> </span>xbar),</span>
+<span id="cb48-5"><a href="#cb48-5"></a>    a <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(<span class="dv">178</span>,<span class="dv">20</span>),</span>
+<span id="cb48-6"><a href="#cb48-6"></a>    b <span class="op">~</span><span class="st"> </span><span class="kw">dlnorm</span>(<span class="dv">0</span>,<span class="dv">1</span>),</span>
+<span id="cb48-7"><a href="#cb48-7"></a>    sigma <span class="op">~</span><span class="st"> </span><span class="kw">dunif</span>(<span class="dv">0</span>,<span class="dv">50</span>)</span>
+<span id="cb48-8"><a href="#cb48-8"></a>  ), <span class="dt">data =</span> d2</span>
+<span id="cb48-9"><a href="#cb48-9"></a>)</span></code></pre></div>
+</div>
+<div id="interpreting-the-posterior-distribution" class="section level4">
+<h4><span class="header-section-number">0.0.9.6</span> Interpreting the posterior distribution</h4>
+<p>We can learn about our model results either via tables or via simulation plotting. Tables aren’t too great, however, at understanding complex models. In this book we’re going to focus on plotting the posterior distributions and posterior predictions.<br />
+<strong>Rethinking: What do parameters mean?</strong> The perspective of this book is: *Posterior probabilities of parameter values describe the relative compatiability of different states of the world with the data, according to the model.</p>
+<p>First, let’s observe a table of marginals</p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1"></a><span class="kw">precis</span>(m4<span class="fl">.3</span>)</span></code></pre></div>
+<pre><code>##              mean         sd        5.5%      94.5%
+## a     154.6013677 0.27030763 154.1693639 155.033372
+## b       0.9032809 0.04192363   0.8362788   0.970283
+## sigma   5.0718804 0.19115474   4.7663782   5.377383</code></pre>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1"></a><span class="kw">pairs</span>(m4<span class="fl">.3</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Plotting the posterior distribution against the data can provide an informal check on assumptions. But more importantly it provides a way to interpret the posterior, especially as models get complicated with interactions and non-linear terms.</p>
+<div class="sourceCode" id="cb52"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1"></a><span class="kw">plot</span>(height <span class="op">~</span><span class="st"> </span>weight, <span class="dt">data =</span> d2, <span class="dt">col =</span> rangi2)</span>
+<span id="cb52-2"><a href="#cb52-2"></a>post &lt;-<span class="st"> </span><span class="kw">extract.samples</span>(m4<span class="fl">.3</span>)</span>
+<span id="cb52-3"><a href="#cb52-3"></a>a_map &lt;-<span class="st"> </span><span class="kw">mean</span>(post<span class="op">$</span>a)</span>
+<span id="cb52-4"><a href="#cb52-4"></a>b_map &lt;-<span class="st"> </span><span class="kw">mean</span>(post<span class="op">$</span>b)</span>
+<span id="cb52-5"><a href="#cb52-5"></a><span class="kw">curve</span>(a_map <span class="op">+</span><span class="st"> </span>b_map<span class="op">*</span>(x <span class="op">-</span><span class="st"> </span>xbar), <span class="dt">add =</span> T)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>The line we just draw is the posterior mean line and does not capture the uncertainty of the estimates. We can do so by plotting multiple regression lines.</p>
+<div class="sourceCode" id="cb53"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1"></a>post &lt;-<span class="st"> </span><span class="kw">extract.samples</span>(m4<span class="fl">.3</span>, <span class="dt">n=</span><span class="dv">100</span>)</span>
+<span id="cb53-2"><a href="#cb53-2"></a><span class="kw">plot</span>(d2<span class="op">$</span>weight, d2<span class="op">$</span>height, <span class="dt">xlim =</span> <span class="kw">range</span>(d2<span class="op">$</span>weight), <span class="dt">ylim =</span> <span class="kw">range</span>(d2<span class="op">$</span>height), <span class="dt">col =</span> rangi2, </span>
+<span id="cb53-3"><a href="#cb53-3"></a>     <span class="dt">xlab =</span> <span class="st">&quot;Weight&quot;</span>, <span class="dt">ylab =</span> <span class="st">&quot;Height&quot;</span>)</span>
+<span id="cb53-4"><a href="#cb53-4"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="kw">nrow</span>(post)){</span>
+<span id="cb53-5"><a href="#cb53-5"></a>  <span class="kw">curve</span>(post<span class="op">$</span>a[i] <span class="op">+</span><span class="st"> </span>post<span class="op">$</span>b[i]<span class="op">*</span>(x <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(d2<span class="op">$</span>weight)), <span class="dt">col =</span> <span class="kw">col.alpha</span>(<span class="st">&quot;black&quot;</span>, <span class="fl">0.3</span>), <span class="dt">add =</span> T)</span>
+<span id="cb53-6"><a href="#cb53-6"></a>}</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-15-1.png" width="672" /></p>
+<p>The uncertainty decreases as we increase the sample size.
+Since <span class="math inline">\(\mu\)</span> is a combination of random variables with distributions, <span class="math inline">\(\mu\)</span> has a distribution. For every value of <span class="math inline">\(x\)</span> weight, we can get all possible values of <span class="math inline">\(\mu\)</span> as a joint distribution of values of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>. This distribution incorporates both the individual variabilities of <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span> as well as any correlation between the variables (joint Gaussian distribution). We can construct an interval for values of height at each values of weight according to our posterior distribution. If we do so for every point of weight in the sample, we can conduct a confidence band for our regression model.</p>
+<div class="sourceCode" id="cb54"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1"></a>weight.seq &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dv">25</span>, <span class="dv">70</span>, <span class="dv">1</span>)</span>
+<span id="cb54-2"><a href="#cb54-2"></a>mu &lt;-<span class="st"> </span><span class="kw">link</span>(m4<span class="fl">.3</span>, <span class="dt">data =</span> <span class="kw">data.frame</span>(<span class="dt">weight =</span> weight.seq))</span>
+<span id="cb54-3"><a href="#cb54-3"></a><span class="kw">str</span>(mu) <span class="co"># This samples from the posterior of height for each value in weight.seq from the model </span></span></code></pre></div>
+<pre><code>##  num [1:1000, 1:46] 135 137 137 137 137 ...</code></pre>
+<div class="sourceCode" id="cb56"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1"></a><span class="kw">plot</span>(height <span class="op">~</span><span class="st"> </span>weight, d2, <span class="dt">type =</span> <span class="st">&quot;n&quot;</span>)</span>
+<span id="cb56-2"><a href="#cb56-2"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="op">:</span><span class="dv">100</span>){</span>
+<span id="cb56-3"><a href="#cb56-3"></a>  <span class="kw">points</span>(weight.seq, mu[i,], <span class="dt">pch =</span> <span class="dv">16</span>, <span class="dt">col =</span> <span class="kw">col.alpha</span>(rangi2,<span class="fl">0.1</span>))</span>
+<span id="cb56-4"><a href="#cb56-4"></a>}</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>We can summarize the posterior distribution as interval estimates and the mean</p>
+<div class="sourceCode" id="cb57"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1"></a>mu.mean &lt;-<span class="st"> </span><span class="kw">apply</span>(mu, <span class="dv">2</span>, mean)</span>
+<span id="cb57-2"><a href="#cb57-2"></a>mu.PI &lt;-<span class="st"> </span><span class="kw">apply</span>(mu, <span class="dv">2</span>, PI, <span class="dt">prob =</span> <span class="fl">0.89</span>)</span>
+<span id="cb57-3"><a href="#cb57-3"></a><span class="kw">plot</span>(height<span class="op">~</span>weight, <span class="dt">data =</span> d2, <span class="dt">col =</span> <span class="kw">col.alpha</span>(rangi2, <span class="fl">0.5</span>))</span>
+<span id="cb57-4"><a href="#cb57-4"></a><span class="kw">lines</span>(weight.seq, mu.mean)</span>
+<span id="cb57-5"><a href="#cb57-5"></a><span class="kw">shade</span>(mu.PI, weight.seq)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-17-1.png" width="672" /></p>
+<p>These intervals are great but they’re very tight around the posterior mean (MAP). This is because the inferences are always conditional on the model. Even bad models can have tight compatibility intervals. In other words, this line can be thought of as “conditional on the assumption that height and weight are linearly related by a straight line, then this is the most plausible line”</p>
+<p>Some ways we can generate predictions and posterior from a fitted model:<br />
+(1) Use a function (in this case <code>link</code>) to generate distributions of posterior values for your parameter <span class="math inline">\(\mu\)</span> for each combination of values from your predictors of interest (in this case, weight).<br />
+(2) Use summary functions like <code>mean</code> and <code>PI</code> to find averages and lower and upper bounds for <span class="math inline">\(\mu\)</span> for each value of the predictor variable<br />
+(3) Use plotting functionality to draw lines and intervals with respect to the real data.</p>
+</div>
+<div id="prediction-intervals" class="section level4">
+<h4><span class="header-section-number">0.0.9.7</span> Prediction intervals</h4>
+<p>The goal of the model in the prediction sense is not to estimate the average height but more specific heights. The way to do it is: for any unique weight value, you can sample from a Gaussian distribution with the correct mean for that weight, using the value of sigma sampled from the sample posterior distribution. If you do this for every sample from the posterior and every weight value, you can get estimates that incorporates both the uncertainty of the Gaussian distribution, as well as the uncertainty of the posterior.</p>
+<div class="sourceCode" id="cb58"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a>sim.height &lt;-<span class="st"> </span><span class="kw">sim</span>(m4<span class="fl">.3</span>, <span class="dt">data =</span> <span class="kw">list</span>(<span class="dt">weight =</span> weight.seq))</span>
+<span id="cb58-2"><a href="#cb58-2"></a>height.PI &lt;-<span class="st"> </span><span class="kw">apply</span>(sim.height, <span class="dv">2</span>, PI, <span class="dt">prob =</span> <span class="fl">0.89</span>)</span>
+<span id="cb58-3"><a href="#cb58-3"></a>mu.HPDI &lt;-<span class="st"> </span><span class="kw">apply</span>(mu, <span class="dv">2</span>, HPDI, <span class="dt">prob =</span> <span class="fl">0.89</span>)</span>
+<span id="cb58-4"><a href="#cb58-4"></a><span class="kw">plot</span>(height <span class="op">~</span><span class="st"> </span>weight, d2, <span class="dt">col =</span> <span class="kw">col.alpha</span>(rangi2, <span class="fl">0.5</span>))</span>
+<span id="cb58-5"><a href="#cb58-5"></a><span class="kw">lines</span>(weight.seq, mu.mean)</span>
+<span id="cb58-6"><a href="#cb58-6"></a><span class="kw">shade</span>(mu.HPDI, weight.seq)</span>
+<span id="cb58-7"><a href="#cb58-7"></a><span class="kw">shade</span>(height.PI, weight.seq)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+</div>
+</div>
+<div id="curve-from-lines" class="section level3">
+<h3><span class="header-section-number">0.0.10</span> 4.5 Curve from lines</h3>
+<p>Here we consider two methods to build curves into our regression. The first is polynomial regression and the second is b-splines.<br />
+#### Polynomial regression<br />
+Polynomial regression uses powers of a variable (such as cubes and squares) as extra predictors to build in curvature to the association function.<br />
+Before we start we should start standardizing our variables, which is a common approach. This will ensure that we don’t have numerical glitches due to large (or small) numbers, as squares and cubes of variables can be very huge. This should be <strong>default</strong> behavior. Let’s define a parabola model on the height vs weight example that we see:<br />
+[
+h_i Normal(_i, ) \</p>
+<p>_i = + _1 x_i + _2 x_i^2 \
+Normal(178,20) \
+_1 LogNormal(0,1) \
+_2 Normal(0,1) \
+Uniform(0,50) \
+]
+Let’s build a model using this new formulation</p>
+<div class="sourceCode" id="cb59"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a>d<span class="op">$</span>weight_s &lt;-<span class="st"> </span>(d<span class="op">$</span>weight <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(d<span class="op">$</span>weight))<span class="op">/</span><span class="kw">sd</span>(d<span class="op">$</span>weight)</span>
+<span id="cb59-2"><a href="#cb59-2"></a></span>
+<span id="cb59-3"><a href="#cb59-3"></a>d<span class="op">$</span>weight_s2 &lt;-<span class="st"> </span>d<span class="op">$</span>weight_s<span class="op">^</span><span class="dv">2</span></span>
+<span id="cb59-4"><a href="#cb59-4"></a></span>
+<span id="cb59-5"><a href="#cb59-5"></a>m4<span class="fl">.5</span> &lt;-<span class="st"> </span><span class="kw">quap</span>(</span>
+<span id="cb59-6"><a href="#cb59-6"></a>  <span class="kw">alist</span>(</span>
+<span id="cb59-7"><a href="#cb59-7"></a>    height <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(mu, sigma),</span>
+<span id="cb59-8"><a href="#cb59-8"></a>    mu &lt;-<span class="st"> </span>a <span class="op">+</span><span class="st"> </span>b1<span class="op">*</span>weight_s <span class="op">+</span><span class="st"> </span>b2<span class="op">*</span>weight_s2,</span>
+<span id="cb59-9"><a href="#cb59-9"></a>    a <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(<span class="dv">178</span>,<span class="dv">20</span>),</span>
+<span id="cb59-10"><a href="#cb59-10"></a>    b1 <span class="op">~</span><span class="st"> </span><span class="kw">dlnorm</span>(<span class="dv">0</span>,<span class="dv">1</span>),</span>
+<span id="cb59-11"><a href="#cb59-11"></a>    b2 <span class="op">~</span><span class="st"> </span><span class="kw">dnorm</span>(<span class="dv">0</span>,<span class="dv">1</span>),</span>
+<span id="cb59-12"><a href="#cb59-12"></a>    sigma <span class="op">~</span><span class="st"> </span><span class="kw">dunif</span>(<span class="dv">0</span>,<span class="dv">50</span>)</span>
+<span id="cb59-13"><a href="#cb59-13"></a>  ), <span class="dt">data =</span> d</span>
+<span id="cb59-14"><a href="#cb59-14"></a>)</span>
+<span id="cb59-15"><a href="#cb59-15"></a><span class="kw">precis</span>(m4<span class="fl">.5</span>)</span></code></pre></div>
+<pre><code>##             mean        sd       5.5%      94.5%
+## a     146.058849 0.3689489 145.469198 146.648501
+## b1     21.732522 0.2888719  21.270849  22.194195
+## b2     -7.804178 0.2741637  -8.242345  -7.366011
+## sigma   5.774166 0.1764407   5.492179   6.056152</code></pre>
+<p>It’s difficult to interpret these polynomial models. <span class="math inline">\(\beta_1\)</span> and <span class="math inline">\(\beta_2\)</span> are square and linear components of the regression, and <span class="math inline">\(\alpha\)</span> is still the intercept but we still don’t know what it means. Since this is a polynomial regression, it also doesn’t guarantee that we’re regressing to the mean of heights either. Let’s plot these things out.</p>
+<div class="sourceCode" id="cb61"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a>weight_seq &lt;-<span class="st"> </span><span class="kw">seq</span>(<span class="dt">from =</span> <span class="fl">-2.2</span>, <span class="dv">2</span>, <span class="dt">length.out =</span> <span class="dv">30</span>)</span>
+<span id="cb61-2"><a href="#cb61-2"></a>pred_dat &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">weight_s =</span> weight_seq, <span class="dt">weight_s2 =</span> weight_seq<span class="op">^</span><span class="dv">2</span>)</span>
+<span id="cb61-3"><a href="#cb61-3"></a>mu &lt;-<span class="st"> </span><span class="kw">link</span>(m4<span class="fl">.5</span>, <span class="dt">data =</span> pred_dat)</span>
+<span id="cb61-4"><a href="#cb61-4"></a>mu.mean &lt;-<span class="st"> </span><span class="kw">apply</span>(mu,<span class="dv">2</span>,mean)</span>
+<span id="cb61-5"><a href="#cb61-5"></a>mu.HPDI &lt;-<span class="st"> </span><span class="kw">apply</span>(mu, <span class="dv">2</span>, HPDI, <span class="dt">prob =</span> <span class="fl">0.89</span>)</span>
+<span id="cb61-6"><a href="#cb61-6"></a>height_sim &lt;-<span class="st"> </span><span class="kw">sim</span>(m4<span class="fl">.5</span>, <span class="dt">data =</span> pred_dat)</span>
+<span id="cb61-7"><a href="#cb61-7"></a>height.PI &lt;-<span class="st"> </span><span class="kw">apply</span>(height_sim, <span class="dv">2</span>, PI, <span class="dt">prob =</span> <span class="fl">0.89</span>)</span>
+<span id="cb61-8"><a href="#cb61-8"></a></span>
+<span id="cb61-9"><a href="#cb61-9"></a><span class="kw">plot</span>(height <span class="op">~</span><span class="st"> </span>weight_s, d, <span class="dt">col =</span> <span class="kw">col.alpha</span>(rangi2, <span class="fl">0.5</span>))</span>
+<span id="cb61-10"><a href="#cb61-10"></a><span class="kw">lines</span>(weight_seq,   mu.mean)</span>
+<span id="cb61-11"><a href="#cb61-11"></a><span class="kw">shade</span>(mu.HPDI, weight_seq)</span>
+<span id="cb61-12"><a href="#cb61-12"></a><span class="kw">shade</span>(height.PI, weight_seq)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-20-1.png" width="672" />
+We can add a third degree polynomial term to get a cubic model. However, these models don’t really have explanations as to what they mean, and can actually lead to overfitting.<br />
+<strong>Rethinking: Linear, additive, funky</strong> These models are still linear models even though they are cubic and square terms with non-straight curve. The word “linear” mean different things in different contexts. In this context, the word “linear” here means that <span class="math inline">\(\mu_i\)</span> is a linear function of any single parameter. In other words, <span class="math inline">\(\mu_i\)</span> is linear with respect to <span class="math inline">\(x\)</span> and <span class="math inline">\(x^2\)</span> individually, but the combination of terms makes it non-linear.</p>
+<div id="splines" class="section level4">
+<h4><span class="header-section-number">0.0.10.1</span> Splines</h4>
+<p>The second way to introduce a curve is through a spline. The word <em>spline</em> is a smooth function built out of smaller component piece-wise linear functions. The <strong>B-Spline</strong> we’ll look at here is commonplace. <strong>B</strong> here stands for “basis”, which means “component”.</p>
+<div class="sourceCode" id="cb62"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1"></a><span class="kw">data</span>(cherry_blossoms)</span>
+<span id="cb62-2"><a href="#cb62-2"></a>d &lt;-<span class="st"> </span>cherry_blossoms</span>
+<span id="cb62-3"><a href="#cb62-3"></a><span class="kw">plot</span>(doy <span class="op">~</span><span class="st"> </span>year, <span class="dt">data =</span> d)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-21-1.png" width="672" />
+There are many ways you can construct basis functions. Some general ideas:<br />
+(1) First, you define “knots” in your data where basis functions completely transform from one basis to another.<br />
+(2) Then, you can define how many basis you can choose, depends usually on the number of knots.<br />
+(3) The basis functions are supposed to smooth out transitions between knotted sections, and generally no more than two basis functions have an “influence” (non-zero weight) for any point in the predictor variable. This gives splines a “local” effect where locally only one or two parameter has an effect, as supposed to polynomial regression where the slope has an impact across the entire regression.<br />
+(4) You can increase the complexity and flexibility of the model by adding more knots or even use higher degree polynomials.</p>
+<p>Come back to our idea</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
